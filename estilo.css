@@ -1,0 +1,124 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.contenedor{
+    perspective: 250px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+.tarjeta{
+    width: 50px;
+    height: 100px;
+    background-color: azure;
+    font-size: 40px;
+    position: absolute;
+    top: 35px;
+    left: 125px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 8s linear infinite;
+}
+
+@keyframes Carrusel{
+    from { 
+        transform: rotateY(360deg) translateZ(100px);
+        z-index: 10;
+        opacity: 0.9;
+
+    }
+    50%{
+        z-index: -10;
+        }
+    to{
+        transform: rotateX(0deg) translateZ(100px);
+    }
+}
+
+#imagen1{
+    background-image: url(hawaii.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -2s;
+}
+#imagen1:hover{
+    box-shadow: 0px 0px 10px blue
+}
+.tarjeta h3{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(0, 0, 0);
+}
+#imagen2{
+    background-image: url(tigre.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -3s;
+}
+#imagen2:hover{
+    box-shadow: 0px 0px 10px blue
+}
+.tarjeta h3{
+    color: rgb(255, 255, 255);
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(0, 0, 0);
+}
+#imagen3{
+    background-image: url(luna.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -4s;
+}
+#imagen3:hover{
+    box-shadow: 0px 0px 10px blue
+}
+.tarjeta h3{
+    color: rgb(255, 255, 255);
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(0, 0, 0);
+}
+#imagen4{
+    background-image: url(atardecer.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -5s;
+}
+#imagen4:hover{
+    box-shadow: 0px 0px 10px blue
+}
+.tarjeta h3{
+    color: rgb(255, 255, 255);
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(0, 0, 0);
+}
+#imagen5{
+    background-image: url(palmera.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -6s;
+}
+#imagen5:hover{
+    box-shadow: 0px 0px 10px blue
+}
+.tarjeta h3{
+    color: rgb(243, 243, 243);
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(0, 0, 0);
+}
